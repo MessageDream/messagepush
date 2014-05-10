@@ -30,6 +30,14 @@ func InitDb() {
 	db = session.DB("messagepush")
 }
 
+type Device struct {
+	Id_    bson.ObjectId `bson:"_id"`
+	AppKey bson.ObjectId `bson:"appkey"`
+	Token  string
+	Tags   []string
+	Alias  string
+}
+
 type App struct {
 	AppKey         bson.ObjectId `bson:"_id"`
 	AppName        string

@@ -12,9 +12,9 @@ func init() {
 
 func main() {
 	m := martini.Classic()
-	m.Post("/push/:appid", func(params martini.Params, req *http.Request) string {
-		appid := params["appid"]
-		return pushHandler(&appid, req)
+	m.Post("/push/:appkey", func(params martini.Params, req *http.Request) string {
+		appkey := params["appkey"]
+		return pushHandler(&appkey, req)
 	})
 	m.Run()
 }

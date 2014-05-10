@@ -1,4 +1,4 @@
 messagepush
 ===========
 
-a push notification server 
+a push notification platform 

@@ -6,10 +6,10 @@ import (
 	"net/http"
 )
 
-func pushHandler(appid *string, req *http.Request) string {
+func pushHandler(appkey *string, req *http.Request) string {
 	msg := &apns.Notification{}
 	ParseJsonFromRequest(req, &msg)
 	fmt.Println(msg)
-	fmt.Println(appid)
+	fmt.Println(appkey)
 	return ""
 }
