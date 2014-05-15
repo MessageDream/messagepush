@@ -52,6 +52,8 @@ type App struct {
 	UserID         bson.ObjectId `bson:"uid"`
 }
 
+//func(app *App)Get
+
 type Statistics struct {
 	AllCount     int
 	SuccessCount int
